@@ -59,9 +59,11 @@ User.init(
             return user;
         }
     },
-
+    
     sequelize,
     freezeTableName : true,
     modelName : 'user'
     }
 );
+
+model.exports = User;
