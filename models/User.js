@@ -10,6 +10,7 @@ class User extends Model {
 }
 
 User.init(
+    // data model
     {
         // primary key, numeric
         id: {
@@ -43,8 +44,24 @@ User.init(
             }
         }
     },
+
     {
-        // hooks
-        
+        hooks : {
+        // create new user, hash password and store
+        async beforeCreate(user) {
+            user.password = await bcrypt.hash(user.password, 10)
+            return user;
+        }
+
+        // update user password, hash and store
+        async beforeUpdate(user) {
+            user.password = await bcrypt.hash(user.pass, 10)
+            return user;
+        }
+    },
+
+    sequelize,
+    freezeTableName : true,
+    modelName : 'user'
     }
-)
+);
