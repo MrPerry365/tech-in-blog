@@ -21,18 +21,18 @@ User.init(
         },
 
         // user name, string
-        loginName: {
+        userName: {
              type : DataTypes.STRING,
              allowNull : false,
         },
 
         password: {
-            type : DataType.STRING,
+            type : DataTypes.STRING,
             allowNull : false,
             validate : {
                 // min 8 word characters
                 is : /^\w{8,}+$/i
-            }
+            },
         },
 
         // email address, string
@@ -51,7 +51,7 @@ User.init(
         async beforeCreate(user) {
             user.password = await bcrypt.hash(user.password, 10)
             return user;
-        }
+        },
 
         // update user password, hash and store
         async beforeUpdate(user) {
