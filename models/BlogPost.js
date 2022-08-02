@@ -7,7 +7,7 @@ BlogPost.init(
     {
         // primary key, numeric ID
         id : {
-            type : DataTyes.INTEGER,
+            type : DataTypes.INTEGER,
             allowNull : false,
             primaryKey : true,
             autoIncrement : true
