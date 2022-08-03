@@ -18,6 +18,8 @@ Author: MrPerry
 - [author](#author),
 - [questions](#questions),
 
+## Current difficulty
+<img src = 'assets/Screen Shot prob 1.png'/>
 ## Heroku Deployment
 
 https://git.heroku.com/tech-in-blog.git
