@@ -10,13 +10,13 @@ const sequelize = require("./config/connection");
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const ses = {
-    secret: '123testicesickles123',
+    secret: '123,test,ice,sickles,123',
     saveUninitialized: true,
     resave: false,
     cookie: {},
-    // store: new SequelizeStore({
-        // db: sequelize
-    // })
+    store: new SequelizeStore({
+        db: sequelize
+    })
 };
 
 const helpers = require('./utils/helpers');
