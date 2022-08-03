@@ -10,9 +10,8 @@ class User extends Model {
 }
 
 User.init(
-    // data model
+
     {
-        // primary key, numeric
         id: {
             type : DataTypes.INTEGER,
             allowNull : false,
@@ -31,7 +30,7 @@ User.init(
             allowNull : false,
             validate : {
                 // min 8 word characters
-                is : ^[a-z0-9_-]{3,15}$
+                is : /^[a-z0-9-]{3,15}$/
             },
         },
 

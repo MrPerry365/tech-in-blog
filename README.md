@@ -1,6 +1,6 @@
 
   # Tech-In-Blog
-## This is a CMS-style blog site where developers can publish their blog posts and comment on other developers posts as well. It follows the MVC paradigm in its architectural structure, uses Handlebars.js as the templating language, and Sequelize as the ORM, and the express-session npm package for authentication
+## This is a CMS-style blog site where developers can publish their blog posts and comment on other developers posts as well. It follows the MVC paradigm in its architectural structure, uses Handlebars.js as the template language, and Sequelize as the ORM, and the express-session npm package for authentication
   
 ## Badge: [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
 
