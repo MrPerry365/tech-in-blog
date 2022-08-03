@@ -31,7 +31,7 @@ User.init(
             allowNull : false,
             validate : {
                 // min 8 word characters
-                is : /^\w{8,}+$/i
+                is : ^[a-z0-9_-]{3,15}$
             },
         },
 

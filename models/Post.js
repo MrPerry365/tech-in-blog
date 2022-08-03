@@ -33,43 +33,43 @@ class Post extends Model {
     }
   }
 
-// Post.init(
-//     {
-//         // primary key, numeric ID
-//         id : {
-//             type : DataTypes.INTEGER,
-//             allowNull : false,
-//             primaryKey : true,
-//             autoIncrement : true
-//         },
+Post.init(
+    {
+        // primary key, numeric ID
+        id : {
+            type : DataTypes.INTEGER,
+            allowNull : false,
+            primaryKey : true,
+            autoIncrement : true
+        },
 
-//         // title, string
-//         title : {
-//             type : DataTypes.STRING,
-//             allowNull : false
-//         },
+        // title, string
+        title : {
+            type : DataTypes.STRING,
+            allowNull : false
+        },
 
-//         // blog body text
-//         description : {
-//             type : DataTypes.STRING,
-//             allowNull : false
-//         },
+        // blog body text
+        description : {
+            type : DataTypes.STRING,
+            allowNull : false
+        },
 
-//         //blog post user_id, ref user model
-//         user_id : {
-//             type : DataTypes.INTEGER,
-//             references : {
-//                 model : 'user',
-//                 key : 'id'
-//             }
-//         }
-//     },
-//     {
-//         sequelize,
-//         freezeTableName : true,
-//         underscored:true,
-//         modelName : 'Post'
-//     }
-// );
+        //blog post user_id, ref user model
+        user_id : {
+            type : DataTypes.INTEGER,
+            references : {
+                model : 'user',
+                key : 'id'
+            }
+        }
+    },
+    {
+        sequelize,
+        freezeTableName : true,
+        underscored:true,
+        modelName : 'Post'
+    }
+);
 
 module.exports = Post;
