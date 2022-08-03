@@ -28,7 +28,7 @@ Comment.init(
         parentPost : {
             type : DataTypes.INTEGER,
             references : {
-                model : 'blogPost',
+                model : 'Post',
                 key : 'id'
             }
         }
