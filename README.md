@@ -18,6 +18,10 @@ Author: MrPerry
 - [author](#author),
 - [questions](#questions),
 
+## Heroku Deployment
+
+https://git.heroku.com/tech-in-blog.git
+
 ## Installation
 npm i
 
